@@ -1,0 +1,23 @@
+h1. The obligatory blog application written with BeepBeep
+
+This code shows how to build a simple application with BeepBeep. It demonstrates a simple application flow and the use
+of filters for authentication.
+
+h2. Setup
+
+For simplicity, I've included everything you need (except Erlang) to run the app.
+
+# Download the code
+# CD into the beebeep_blog_example directory
+# run make 
+# run ./start-server.sh
+# point your browser to http://localhost:8000
+
+Since BeepBeep generates the core code and structure for you, the only code I needed to write for this
+app was:
+
+# src/main_controller.erl  - The controller for displaying and creating posts
+# src/login_controller.erl - The controller for handling login
+# The templates for the app, located in the template directory
+# Oh, and the simple blog_db, used to store blog entries in-memory
+ 
